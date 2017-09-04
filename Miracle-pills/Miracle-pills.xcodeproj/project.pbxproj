@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		A75EBA801F58168D00FCF020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBA7F1F58168D00FCF020 /* AppDelegate.swift */; };
 		A75EBA821F58168D00FCF020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBA811F58168D00FCF020 /* ViewController.swift */; };
-		A75EBA851F58168E00FCF020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EBA831F58168E00FCF020 /* Main.storyboard */; };
 		A75EBA871F58168E00FCF020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75EBA861F58168E00FCF020 /* Assets.xcassets */; };
 		A75EBA8A1F58168E00FCF020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EBA881F58168E00FCF020 /* LaunchScreen.storyboard */; };
 		A75EBA951F58168E00FCF020 /* Miracle_pillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBA941F58168E00FCF020 /* Miracle_pillsTests.swift */; };
 		A75EBAA01F58168E00FCF020 /* Miracle_pillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBA9F1F58168E00FCF020 /* Miracle_pillsUITests.swift */; };
+		A75EBAAD1F5D324500FCF020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EBA831F58168E00FCF020 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75EBAAD1F5D324500FCF020 /* Main.storyboard in Resources */,
 				A75EBA8A1F58168E00FCF020 /* LaunchScreen.storyboard in Resources */,
 				A75EBA871F58168E00FCF020 /* Assets.xcassets in Resources */,
-				A75EBA851F58168E00FCF020 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
