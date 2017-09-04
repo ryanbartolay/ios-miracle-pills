@@ -90,19 +90,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-e5-AaE">
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-e5-AaE">
                                 <rect key="frame" x="50" y="440" width="329" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-ba-eJQ">
-                                <rect key="frame" x="40" y="404.66666666666669" width="125" height="30"/>
-                                <state key="normal" title="Choose your state"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-z2-Rdd">
+                                <rect key="frame" x="40" y="399.66666666666669" width="334" height="30"/>
+                                <state key="normal" title="Choose your State"/>
                                 <connections>
-                                    <action selector="stateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BbF-Yb-gWZ"/>
+                                    <action selector="stateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rk2-W6-5B4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="LMV-e5-AaE" firstAttribute="top" secondItem="bhT-z2-Rdd" secondAttribute="bottom" constant="1" id="1ds-VY-SPC"/>
                             <constraint firstItem="gNM-1e-TQ6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="2sr-qY-5Lc"/>
                             <constraint firstItem="C0f-Jd-mcD" firstAttribute="leading" secondItem="kAY-CB-A5r" secondAttribute="leading" id="3Ac-Re-oVm"/>
                             <constraint firstItem="UOC-cx-Li1" firstAttribute="leading" secondItem="zPV-e3-Rqw" secondAttribute="leading" id="5xw-OP-Aae"/>
@@ -111,12 +112,11 @@
                             <constraint firstItem="GoW-V3-63Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hM-Vl-kbA"/>
                             <constraint firstItem="LMV-e5-AaE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="9Dl-dt-xEa"/>
                             <constraint firstItem="xZl-y1-yYP" firstAttribute="top" secondItem="UOC-cx-Li1" secondAttribute="bottom" constant="10" id="BxK-sl-t0W"/>
-                            <constraint firstItem="LMV-e5-AaE" firstAttribute="top" secondItem="1CE-ba-eJQ" secondAttribute="bottom" id="Bzh-Zb-BPH"/>
+                            <constraint firstItem="LMV-e5-AaE" firstAttribute="top" secondItem="bhT-z2-Rdd" secondAttribute="bottom" constant="10.333333333333314" id="DQA-PD-jny"/>
                             <constraint firstItem="2vI-oq-pNB" firstAttribute="leading" secondItem="C0f-Jd-mcD" secondAttribute="leading" id="F9Y-SV-aBa"/>
                             <constraint firstItem="LMV-e5-AaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUQ-6l-l3H"/>
                             <constraint firstItem="C0f-Jd-mcD" firstAttribute="trailing" secondItem="kAY-CB-A5r" secondAttribute="trailing" id="JnC-xK-Yae"/>
                             <constraint firstItem="UOC-cx-Li1" firstAttribute="trailing" secondItem="zPV-e3-Rqw" secondAttribute="trailing" id="MNU-hT-1ay"/>
-                            <constraint firstItem="1CE-ba-eJQ" firstAttribute="leading" secondItem="xZl-y1-yYP" secondAttribute="leading" id="MTI-j2-44M"/>
                             <constraint firstItem="GoW-V3-63Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYt-Zc-XkX"/>
                             <constraint firstItem="xZl-y1-yYP" firstAttribute="trailing" secondItem="UOC-cx-Li1" secondAttribute="trailing" id="Oep-b8-L77"/>
                             <constraint firstItem="UOC-cx-Li1" firstAttribute="top" secondItem="zPV-e3-Rqw" secondAttribute="bottom" constant="5" id="Otc-aq-Qbd"/>
@@ -124,6 +124,7 @@
                             <constraint firstItem="zPV-e3-Rqw" firstAttribute="leading" secondItem="2vI-oq-pNB" secondAttribute="leading" id="QUG-PM-DE9"/>
                             <constraint firstItem="2vI-oq-pNB" firstAttribute="leading" secondItem="9Xl-ZW-DTp" secondAttribute="leading" id="R7E-UQ-iIx"/>
                             <constraint firstItem="zPV-e3-Rqw" firstAttribute="top" secondItem="2vI-oq-pNB" secondAttribute="bottom" constant="10" id="SaQ-Mf-iv6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bhT-z2-Rdd" secondAttribute="trailing" constant="20" id="Scz-Rt-bz0"/>
                             <constraint firstItem="d0Q-J4-lKR" firstAttribute="top" secondItem="GoW-V3-63Y" secondAttribute="bottom" constant="25" id="WBa-2g-w2A"/>
                             <constraint firstItem="2vI-oq-pNB" firstAttribute="top" secondItem="9Xl-ZW-DTp" secondAttribute="bottom" constant="5" id="aLP-qq-8y2"/>
                             <constraint firstItem="kAY-CB-A5r" firstAttribute="trailing" secondItem="gNM-1e-TQ6" secondAttribute="trailing" id="aNg-U9-bl4"/>
@@ -135,12 +136,11 @@
                             <constraint firstItem="GoW-V3-63Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="crf-Vd-rGN"/>
                             <constraint firstItem="kAY-CB-A5r" firstAttribute="top" secondItem="gNM-1e-TQ6" secondAttribute="bottom" constant="8" id="eZI-ic-Jgm"/>
                             <constraint firstItem="UOC-cx-Li1" firstAttribute="top" secondItem="zPV-e3-Rqw" secondAttribute="bottom" constant="8" id="egS-Mh-Jkd"/>
-                            <constraint firstItem="LMV-e5-AaE" firstAttribute="top" secondItem="1CE-ba-eJQ" secondAttribute="bottom" constant="5.3333333333333144" id="fGH-zJ-2he"/>
                             <constraint firstItem="LMV-e5-AaE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="g3Q-ef-lSa"/>
                             <constraint firstItem="zPV-e3-Rqw" firstAttribute="trailing" secondItem="2vI-oq-pNB" secondAttribute="trailing" id="g6e-BE-Jga"/>
+                            <constraint firstItem="bhT-z2-Rdd" firstAttribute="top" secondItem="xZl-y1-yYP" secondAttribute="bottom" constant="7.3333333333333144" id="guO-sw-dnv"/>
                             <constraint firstItem="2vI-oq-pNB" firstAttribute="trailing" secondItem="9Xl-ZW-DTp" secondAttribute="trailing" id="hBD-GO-f0l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LMV-e5-AaE" secondAttribute="trailing" constant="30" id="hJH-iE-dGP"/>
-                            <constraint firstItem="1CE-ba-eJQ" firstAttribute="top" secondItem="xZl-y1-yYP" secondAttribute="bottom" constant="10" id="iH2-Am-LEa"/>
                             <constraint firstItem="gNM-1e-TQ6" firstAttribute="top" secondItem="xiW-1G-EtZ" secondAttribute="bottom" constant="5" id="jZN-4N-xTE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LMV-e5-AaE" secondAttribute="trailing" constant="30" id="lle-fp-9VA"/>
                             <constraint firstItem="zPV-e3-Rqw" firstAttribute="leading" secondItem="2vI-oq-pNB" secondAttribute="leading" id="nCQ-Tf-JVO"/>
@@ -149,15 +149,18 @@
                             <constraint firstItem="kAY-CB-A5r" firstAttribute="top" secondItem="gNM-1e-TQ6" secondAttribute="bottom" constant="5" id="oUs-Jw-2Ze"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gNM-1e-TQ6" secondAttribute="trailing" constant="20" id="oXd-5U-3DV"/>
                             <constraint firstItem="xiW-1G-EtZ" firstAttribute="top" secondItem="d0Q-J4-lKR" secondAttribute="bottom" constant="5" id="rNk-WE-cNv"/>
+                            <constraint firstItem="bhT-z2-Rdd" firstAttribute="leading" secondItem="xZl-y1-yYP" secondAttribute="leading" id="rvk-Xo-BeR"/>
                             <constraint firstItem="xZl-y1-yYP" firstAttribute="leading" secondItem="UOC-cx-Li1" secondAttribute="leading" id="sxm-DY-GeU"/>
-                            <constraint firstItem="LMV-e5-AaE" firstAttribute="top" secondItem="1CE-ba-eJQ" secondAttribute="bottom" constant="5" id="tcJ-xJ-4YC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LMV-e5-AaE" secondAttribute="trailing" constant="15" id="u0y-Ik-UXw"/>
                             <constraint firstItem="kAY-CB-A5r" firstAttribute="top" secondItem="gNM-1e-TQ6" secondAttribute="bottom" constant="15" id="uje-zl-Zss"/>
+                            <constraint firstItem="bhT-z2-Rdd" firstAttribute="top" secondItem="xZl-y1-yYP" secondAttribute="bottom" constant="5" id="vqB-r2-Rpl"/>
                             <constraint firstItem="2vI-oq-pNB" firstAttribute="trailing" secondItem="C0f-Jd-mcD" secondAttribute="trailing" id="yya-EL-FGB"/>
+                            <constraint firstItem="bhT-z2-Rdd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zu9-zv-bcy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="statePicker" destination="LMV-e5-AaE" id="OlY-Uc-6pI"/>
+                        <outlet property="statePickerBtn" destination="bhT-z2-Rdd" id="tCr-5B-Xia"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,6 +12,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBOutlet weak var statePicker: UIPickerView!
     
+    @IBOutlet weak var statePickerBtn: UIButton!
+    
     let states = ["Manila", "Makati", "Las Pinas", "Alabang"]
     
     override func viewDidLoad() {
@@ -27,10 +29,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var stateButtonPressed: UIButton!
-    
     @IBAction func stateButtonPressed(_ sender: Any) {
+        statePicker.isHidden = false
     }
+    
     // number of columns
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -42,6 +44,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return states[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        statePickerBtn.setTitle(states[row], for: UIControlState.normal)
+        statePicker.isHidden = true
     }
 }
 
