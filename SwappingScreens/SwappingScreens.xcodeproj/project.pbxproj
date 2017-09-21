@@ -14,6 +14,8 @@
 		A75EBAFF1F5EC8CB00FCF020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75EBAFD1F5EC8CB00FCF020 /* LaunchScreen.storyboard */; };
 		A75EBB0A1F5EC8CB00FCF020 /* SwappingScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBB091F5EC8CB00FCF020 /* SwappingScreensTests.swift */; };
 		A75EBB151F5EC8CB00FCF020 /* SwappingScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBB141F5EC8CB00FCF020 /* SwappingScreensUITests.swift */; };
+		A75EBB231F5ED33800FCF020 /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBB221F5ED33800FCF020 /* MusicListVC.swift */; };
+		A75EBB251F5EDAE600FCF020 /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75EBB241F5EDAE600FCF020 /* PlaySongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A75EBB101F5EC8CB00FCF020 /* SwappingScreensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwappingScreensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75EBB141F5EC8CB00FCF020 /* SwappingScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingScreensUITests.swift; sourceTree = "<group>"; };
 		A75EBB161F5EC8CB00FCF020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A75EBB221F5ED33800FCF020 /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		A75EBB241F5EDAE600FCF020 /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				A75EBAF41F5EC8CB00FCF020 /* AppDelegate.swift */,
 				A75EBAF61F5EC8CB00FCF020 /* LoginVC.swift */,
+				A75EBB221F5ED33800FCF020 /* MusicListVC.swift */,
 				A75EBAF81F5EC8CB00FCF020 /* Main.storyboard */,
+				A75EBB241F5EDAE600FCF020 /* PlaySongVC.swift */,
 				A75EBAFB1F5EC8CB00FCF020 /* Assets.xcassets */,
 				A75EBAFD1F5EC8CB00FCF020 /* LaunchScreen.storyboard */,
 				A75EBB001F5EC8CB00FCF020 /* Info.plist */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75EBB231F5ED33800FCF020 /* MusicListVC.swift in Sources */,
+				A75EBB251F5EDAE600FCF020 /* PlaySongVC.swift in Sources */,
 				A75EBAF71F5EC8CB00FCF020 /* LoginVC.swift in Sources */,
 				A75EBAF51F5EC8CB00FCF020 /* AppDelegate.swift in Sources */,
 			);
